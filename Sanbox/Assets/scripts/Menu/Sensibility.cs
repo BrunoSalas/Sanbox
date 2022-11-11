@@ -13,8 +13,8 @@ public class Sensibility : MonoBehaviour
     void Start()
     {
         slider.value = PlayerPrefs.GetFloat("Sensibility", 125f);
-        PlayerCam.sensX = slider.value;
-        PlayerCam.sensY = slider.value;
+        //PlayerCam.sensX = slider.value;
+        //PlayerCam.sensY = slider.value;
     }
 
     // Update is called once per frame
@@ -27,8 +27,8 @@ public class Sensibility : MonoBehaviour
     {
         slidervalue = value;
         PlayerPrefs.SetFloat("Sensibility", slidervalue);
-        PlayerCam.sensX = slider.value;
-        PlayerCam.sensY = slider.value;
+       // PlayerCam.sensX = slider.value;
+       // PlayerCam.sensY = slider.value;
         ShowValue();
 
     }

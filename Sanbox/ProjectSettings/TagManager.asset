@@ -3,12 +3,22 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - SlotDisplay
+  - Loot
+  - Object
+  - Checkpoint
+  - PositionCine
+  - UI
+  - Spear
+  - Axe
+  - Knife
+  - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - 

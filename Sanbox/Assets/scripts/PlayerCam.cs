@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerCam : MonoBehaviour
 {
-    public static float sensX;
-    public static float sensY;
+    public float sensX;
+    public float sensY;
 
     public Transform orientation;
 
@@ -14,18 +14,14 @@ public class PlayerCam : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-        }
+        
+       Cursor.lockState = CursorLockMode.Locked;
+        
     }
     // Update is called once per frame
     void Update()
     {
-        if (PlayerPickUp.isPushing == false && GameManager.inPause == false)
-        {
-            Camera();
-        }
-
+      Camera();
     }
 
     void Camera()
@@ -37,8 +33,6 @@ public class PlayerCam : MonoBehaviour
 
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
-
-
         //rotar camara
 
         transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
