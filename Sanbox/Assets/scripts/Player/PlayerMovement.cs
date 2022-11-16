@@ -119,7 +119,7 @@ public class PlayerMovement : MonoBehaviour
                 }
                 if (hor != 0 || ver != 0)
                 {
-                    model.sourceSound.SetActive(true);
+                   // model.sourceSound.SetActive(true);
                 }
             }
         }
@@ -129,7 +129,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (hor == 0 || ver == 0)
                 {
-                    model.sourceSound.SetActive(false);
+                  //  model.sourceSound.SetActive(false);
                 }
             }
             else if (move != checkMove)
@@ -150,7 +150,7 @@ public class PlayerMovement : MonoBehaviour
                 }
                 if (hor != 0 || ver != 0)
                 {
-                    model.sourceSound.SetActive(true);
+                   // model.sourceSound.SetActive(true);
                 }
             }
         }
